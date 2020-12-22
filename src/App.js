@@ -1,25 +1,32 @@
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 
+import Caesar from './pages/caesar'
+import Knuth from './pages/knuth'
+import Newton from './pages/newton'
+
+// @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+// mr robot style font for final page
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='main'>
+      <Router>
+       <Switch>
+        <Route exact path='/'>
+          <Caesar />
+        </Route>
+        <Route exact path='/knuth'>
+          <Knuth />
+        </Route>
+        <Route exact path='/newton'>
+          <Newton />
+        </Route>
+       </Switch>
+    </Router>
     </div>
-  );
+  )
 }
 
 export default App;

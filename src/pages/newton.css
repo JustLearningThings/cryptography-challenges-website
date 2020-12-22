@@ -1,0 +1,53 @@
+#newton {
+	width: 100vw;
+	height: 100vh;
+	animation: change-gradient 15s ease infinite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+@keyframes change-gradient {
+	0% { background: linear-gradient(to right bottom, #d6d2b4, #edbfb2) }
+	10% { background: linear-gradient(to right bottom, #edbfb2, #c48fb3) }
+	20% { background: linear-gradient(to right bottom, #c48fb3, #8d72b0) }
+	30% { background: linear-gradient(to right bottom, #8d72b0, #737dba) }
+	40% { background: linear-gradient(to right bottom, #737dba, #9dacc7) }
+	50% { background: linear-gradient(to right bottom, #9dacc7, #9cd2db) }
+	60% { background: linear-gradient(to right bottom, #9cd2db, #89d6c7) }
+	70% { background: linear-gradient(to right bottom, #89d6c7, #54ba7d) }
+	80% { background: linear-gradient(to right bottom, #54ba7d, #77bf7a) }
+	90% { background: linear-gradient(to right bottom, #77bf7a, #98b084) }
+	100% { background: linear-gradient(to right bottom, #d6d2b4, #edbfb2) }
+}
+
+#newton-task {
+	width: 65%;
+	height: 50%;
+	background-color: white;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: .25;
+	position: absolute;
+	z-index: 2;
+}
+
+#newton-task:before {
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+	filter: blur(10px);
+}
+
+#inner-container {
+	z-index: 3;
+	width: 60%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}

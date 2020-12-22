@@ -1,0 +1,36 @@
+#knuth {
+	background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+	position: relative;
+}
+
+#here {
+	display: none;
+}
+
+#hint {
+	font-weight: normal;
+	color: transparent;
+}
+
+#left {
+	position: absolute;
+	left: 7.5%;
+	width: 35%;
+	color: whitesmoke;
+}
+
+#right {
+	position: absolute;
+	right: 7.5%;
+	width: 35%;
+	text-align: right;
+}
+
+input {
+	background: none;
+	border: none;
+	border-bottom: 1px solid black;
+	min-height: 20px;
+	outline: none;
+	max-width: 80%;
+}
